@@ -12,7 +12,8 @@ connect();
 
 function connect() {
     mongoose.connect(db_URI, { 
-      useNewUrlParser: true
+      useNewUrlParser: true,
+      useUnifiedTopology: true
    });
 }
 
