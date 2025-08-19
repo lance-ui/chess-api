@@ -11,7 +11,7 @@ var db_URI = process.env.DB_URL || 'mongodb://chess_player:chess_player@ds163016
 connect();
 
 function connect() {
-    mongoose.connect(db_URI, { useMongoClient: true });
+    mongoose.connect(db_URI, { useNewUrlParser: true });
 }
 
 /** Mongoose is connected **/
