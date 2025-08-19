@@ -12,12 +12,7 @@ connect();
 
 function connect() {
     mongoose.connect(db_URI, { 
-      useNewUrlParser: true,
-      serverApi: {
-        version: ServerApiVersion.v1,
-        strict: true,
-        deprecationErrors: true,
-      }
+      useNewUrlParser: true
    });
 }
 
