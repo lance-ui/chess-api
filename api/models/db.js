@@ -7,7 +7,7 @@ var failedConnections = 0;
 var autoReconnect = true;
 
 //var db_URI = 'mongodb://localhost/ElmChessDb'
-var db_URI = 'mongodb://chess_player:chess_player@ds163016.mlab.com:63016/chess-highscores';
+var db_URI = process.env.DB_URL || 'mongodb://chess_player:chess_player@ds163016.mlab.com:63016/chess-highscores';
 connect();
 
 function connect() {
